@@ -1,0 +1,624 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Room Details - NiceHotel Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Vendor CSS Files -->
+  <link href="vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendors/aos/aos.css" rel="stylesheet">
+  <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="vendors/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceHotel
+  * Template URL: https://bootstrapmade.com/nicehotel-bootstrap-hotel-website-template/
+  * Updated: Aug 20 2025 with Bootstrap v5.3.7
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="room-details-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center dark-background">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="/cdn-cgi/l/email-protection#395a56574d585a4d795c41585449555c175a5654"><span class="__cf_email__" data-cfemail="c4a7abaab0a5a7b084a1bca5a9b4a8a1eaa7aba9">[email&#160;protected]</span></a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
+        </div>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">NiceHotel</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="room-details.html" class="active">Room Details</a></li>
+                <li><a href="restaurant.html">Restaurant</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="terms.html">Terms Page</a></li>
+                <li><a href="privacy.html">Privacy Page</a></li>
+                <li><a href="404.html">404 Page</a></li>
+                <li><a href="starter-page.html">Starter Page</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <li class="dropdown select-language">
+              <a href="#english">
+                <svg class="icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_iconCarrier">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 0H6V2H10V4H8.86807C8.57073 5.66996 7.78574 7.17117 6.6656 8.35112C7.46567 8.73941 8.35737 8.96842 9.29948 8.99697L10.2735 6H12.7265L15.9765 16H13.8735L13.2235 14H9.77647L9.12647 16H7.0235L8.66176 10.9592C7.32639 10.8285 6.08165 10.3888 4.99999 9.71246C3.69496 10.5284 2.15255 11 0.5 11H0V9H0.5C1.5161 9 2.47775 8.76685 3.33437 8.35112C2.68381 7.66582 2.14629 6.87215 1.75171 6H4.02179C4.30023 6.43491 4.62904 6.83446 4.99999 7.19044C5.88743 6.33881 6.53369 5.23777 6.82607 4H0V2H4V0ZM12.5735 12L11.5 8.69688L10.4265 12H12.5735Z" fill="currentColor"></path>
+                  </g>
+                </svg>
+                <span>English</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#french">French</a></li>
+                <li><a href="#deutsch">Deutsch</a></li>
+                <li><a href="#spanish">Spanish</a></li>
+              </ul>
+            </li>
+
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title light-background">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Room Details</li>
+          </ol>
+        </nav>
+        <h1>Room Details</h1>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Room Details Section -->
+    <section id="room-details" class="room-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Room Gallery Slider -->
+        <div class="room-gallery-hero mb-5" data-aos="zoom-in" data-aos-delay="200">
+          <div class="gallery-slider swiper init-swiper">
+            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 4000
+                },
+                "slidesPerView": 1,
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/hotel/room-3.webp" alt="Premium Suite Main View" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/hotel/room-7.webp" alt="Bedroom Area" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/hotel/room-11.webp" alt="Living Space" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/hotel/dining-2.webp" alt="Bathroom" class="img-fluid">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="room-overlay-info">
+              <div class="room-category">Executive Suite</div>
+              <div class="room-rating">
+                <span class="rating-score">4.9</span>
+                <div class="rating-stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room Information Cards -->
+        <div class="row mb-5">
+          <div class="col-lg-8" data-aos="fade-right" data-aos-delay="200">
+            <div class="room-main-info">
+              <h1 class="room-name">Executive Harbor Suite</h1>
+              <p class="room-subtitle">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae molestie convallis tempor.</p>
+
+              <div class="room-specs">
+                <div class="spec-item">
+                  <div class="spec-icon">
+                    <i class="bi bi-people-fill"></i>
+                  </div>
+                  <div class="spec-content">
+                    <h6>Guest Capacity</h6>
+                    <span>Up to 3 adults</span>
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-icon">
+                    <i class="bi bi-arrows-fullscreen"></i>
+                  </div>
+                  <div class="spec-content">
+                    <h6>Room Size</h6>
+                    <span>720 sq ft</span>
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-icon">
+                    <i class="bi bi-house-door"></i>
+                  </div>
+                  <div class="spec-content">
+                    <h6>Room Type</h6>
+                    <span>Queen bed + Daybed</span>
+                  </div>
+                </div>
+                <div class="spec-item">
+                  <div class="spec-icon">
+                    <i class="bi bi-water"></i>
+                  </div>
+                  <div class="spec-content">
+                    <h6>View</h6>
+                    <span>Harbor &amp; City</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-left" data-aos-delay="300">
+            <div class="booking-widget">
+              <div class="pricing-header">
+                <div class="current-price">
+                  <span class="amount">$285</span>
+                  <span class="period">/ night</span>
+                </div>
+                <div class="original-price">$340</div>
+              </div>
+              <div class="booking-form">
+                <div class="date-selector">
+                  <label>Check-in &amp; Check-out</label>
+                  <input type="text" class="form-control" placeholder="Select dates" readonly="">
+                </div>
+                <div class="guest-selector">
+                  <label>Guests</label>
+                  <select class="form-select">
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>3 Adults</option>
+                  </select>
+                </div>
+                <button class="btn btn-book-primary">Check Availability</button>
+                <div class="booking-note">
+                  <i class="bi bi-shield-check"></i>
+                  <span>Free cancellation until 24h before</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Room Features Grid -->
+        <div class="room-features-section mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="feature-block">
+                <h3>Room Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam. Ut suscipit rutrum urna id vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                <p>Donec auctor blandit quam, ac finibus ante pulvinar ac. Sed congue lorem non lorem cursus, vel cursus nulla scelerisque. Aliquam erat volutpat. Mauris luctus sapien vel fermentum lobortis.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="amenities-grid">
+                <h4>Suite Amenities</h4>
+                <div class="amenities-list">
+                  <div class="amenity-item">
+                    <i class="bi bi-wifi"></i>
+                    <span>Complimentary Wi-Fi</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="bi bi-tv"></i>
+                    <span>49" Smart TV</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="bi bi-cup-hot"></i>
+                    <span>Coffee &amp; Tea Station</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="bi bi-snow"></i>
+                    <span>Individual Climate Control</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="bi bi-shield-lock"></i>
+                    <span>Electronic Safe</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="bi bi-telephone"></i>
+                    <span>Direct Dial Phone</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="bi bi-droplet"></i>
+                    <span>Rainfall Shower</span>
+                  </div>
+                  <div class="amenity-item">
+                    <i class="bi bi-basket"></i>
+                    <span>Premium Bath Products</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Information Tabs -->
+        <div class="info-tabs-section mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav nav-pills info-nav" id="room-detailsInfoTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="room-details-details-tab" data-bs-toggle="tab" data-bs-target="#room-details-details" type="button" role="tab">Room Details</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="room-details-policies-tab" data-bs-toggle="tab" data-bs-target="#room-details-policies" type="button" role="tab">Hotel Policies</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="room-details-area-tab" data-bs-toggle="tab" data-bs-target="#room-details-area" type="button" role="tab">Area Info</button>
+                </li>
+              </ul>
+
+              <div class="tab-content info-tab-content" id="room-detailsInfoTabsContent">
+                <div class="tab-pane fade show active" id="room-details-details" role="tabpanel">
+                  <div class="tab-inner">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5>Bed Configuration</h5>
+                        <ul class="detail-list">
+                          <li>1 Queen size bed (160cm x 200cm)</li>
+                          <li>1 Daybed for additional guest</li>
+                          <li>Premium memory foam mattress</li>
+                          <li>Hypoallergenic bedding</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <h5>Bathroom Features</h5>
+                        <ul class="detail-list">
+                          <li>Marble bathroom with heated floors</li>
+                          <li>Separate rainfall shower</li>
+                          <li>Premium toiletries included</li>
+                          <li>Hair dryer and magnifying mirror</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="room-details-policies" role="tabpanel">
+                  <div class="tab-inner">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h5>Check-in / Check-out</h5>
+                        <p><strong>Check-in:</strong> 2:00 PM<br><strong>Check-out:</strong> 12:00 PM</p>
+                      </div>
+                      <div class="col-md-4">
+                        <h5>Cancellation Policy</h5>
+                        <p>Free cancellation up to 24 hours before arrival. Late cancellations subject to one night charge.</p>
+                      </div>
+                      <div class="col-md-4">
+                        <h5>Additional Policies</h5>
+                        <p>No smoking rooms. Pets welcome with advance notice and additional fee of $50 per night.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="room-details-area" role="tabpanel">
+                  <div class="tab-inner">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h5>Local Attractions</h5>
+                        <ul class="detail-list">
+                          <li>Harbor Walk - 3 minute walk</li>
+                          <li>Historic Market Square - 0.7 miles</li>
+                          <li>Art Museum District - 1.1 miles</li>
+                          <li>Waterfront Park - 0.4 miles</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-6">
+                        <h5>Getting Around</h5>
+                        <ul class="detail-list">
+                          <li>Complimentary airport shuttle</li>
+                          <li>Self-parking: $20 per night</li>
+                          <li>Metro station: 0.3 miles</li>
+                          <li>Taxi stand directly outside hotel</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add-on Services -->
+        <div class="addon-services mb-5" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="services-title">Optional Services</h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-header">
+                  <div class="service-icon">
+                    <i class="bi bi-egg-fried"></i>
+                  </div>
+                  <h5>Continental Breakfast</h5>
+                </div>
+                <p>Fresh pastries, seasonal fruits, coffee and tea selection served daily from 6:30 AM to 10:30 AM.</p>
+                <div class="service-price">$28 per person</div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-header">
+                  <div class="service-icon">
+                    <i class="bi bi-car-front"></i>
+                  </div>
+                  <h5>Valet Parking</h5>
+                </div>
+                <p>Convenient valet parking service available 24/7. Your vehicle will be safely stored in our secure garage.</p>
+                <div class="service-price">$35 per night</div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="service-card">
+                <div class="service-header">
+                  <div class="service-icon">
+                    <i class="bi bi-heart-pulse"></i>
+                  </div>
+                  <h5>Wellness Package</h5>
+                </div>
+                <p>Access to fitness center, indoor pool, and complimentary yoga classes during your stay.</p>
+                <div class="service-price">$65 per stay</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Final Booking Call-to-Action -->
+        <div class="final-cta" data-aos="zoom-in" data-aos-delay="200">
+          <div class="cta-container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="cta-content">
+                  <h3>Book Your Executive Harbor Suite</h3>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Experience comfort and luxury with stunning harbor views.</p>
+                  <div class="cta-features">
+                    <div class="feature-item">
+                      <i class="bi bi-check-circle"></i>
+                      <span>Best Rate Guarantee</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="bi bi-check-circle"></i>
+                      <span>24/7 Guest Services</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="cta-booking">
+                  <div class="price-summary">
+                    <div class="total-price">
+                      <span class="label">Starting from</span>
+                      <span class="price">$285</span>
+                      <span class="unit">per night</span>
+                    </div>
+                  </div>
+                  <div class="cta-buttons">
+                    <a href="booking.html" class="btn btn-cta-primary">Reserve Now</a>
+                    <a href="tel:+15551234567" class="btn btn-cta-secondary">
+                      <i class="bi bi-telephone"></i>
+                      Call to Book
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Room Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">NiceHotel</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A108 Adam Street</p>
+              <p>New York, NY 535022</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+              <p><strong>Email:</strong> <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="355c5b535a75504d54584559501b565a58">[email&#160;protected]</a></span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">Product Management</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Hic solutasetp</h4>
+            <ul>
+              <li><a href="#">Molestiae accusamus iure</a></li>
+              <li><a href="#">Excepturi dignissimos</a></li>
+              <li><a href="#">Suscipit distinctio</a></li>
+              <li><a href="#">Dilecta</a></li>
+              <li><a href="#">Sit quas consectetur</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Nobis illum</h4>
+            <ul>
+              <li><a href="#">Ipsam</a></li>
+              <li><a href="#">Laudantium dolorum</a></li>
+              <li><a href="#">Dinera</a></li>
+              <li><a href="#">Trodelas</a></li>
+              <li><a href="#">Flexo</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>MyWebsite</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendors/php-email-form/validate.js"></script>
+  <script src="vendors/aos/aos.js"></script>
+  <script src="vendors/swiper/swiper-bundle.min.js"></script>
+  <script src="vendors/glightbox/js/glightbox.min.js"></script>
+  <script src="vendors/purecounter/purecounter_vanilla.js"></script>
+  <script src="vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="vendors/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"68c5ca450bae485a842ff76066d69420","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+
+</html>
