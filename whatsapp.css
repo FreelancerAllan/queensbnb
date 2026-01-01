@@ -1,0 +1,40 @@
+/* Container to hold everything on the right */
+.fab-wrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Creates the space between buttons */
+  z-index: 9999;
+}
+
+/* Base style for the visible circles */
+.fab-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white !important;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+.fab-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Brand Colors */
+.whatsapp { background-color: #25D366; }
+.phone { background-color: #ce1212; }
+
+/* HIDE THE SCROLL TOP BUTTON VISUALLY */
+/* We keep the ID so the JS doesn't crash, but make it invisible */
+#scroll-top {
+  visibility: hidden !important;
+  display: none !important; 
+}
