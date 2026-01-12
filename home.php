@@ -502,7 +502,7 @@
               <h1>Send us a Message</h1>
               <p class="mb-4" style="color: #D1D1D1;">Have questions or want to learn more? Reach out to us and our team will get back to you shortly.</p>
 
-              <form action="forms/contact.php" method="post" class="php-email-form">
+              <form action="contact.php" method="post" class="php-email-form">
                 <div class="row g-4">
                   <div class="col-md-6">
                     <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required="">
